@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // from: https://gist.github.com/cecilemuller/2963155d0f249c1544289b78a1cdd695
+        {
+            "name": "ts-node debug current file",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register/transpile-only"
+            ],
+            "args": [
+                "${relativeFile}",
+                "--example",
+                "hello"
+            ],
+            "cwd": "${workspaceRoot}",
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "<node_internals>/**",
+                "node_modules/**"
+            ]
+        }
+    ]
+}
