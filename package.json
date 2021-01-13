@@ -1,7 +1,7 @@
 {
-  "name": "leetcode-algorithm",
+  "name": "leetcode",
   "scripts": {},
-  "author": "",
+  "author": "JHYeom (okyjh12@naver.com)",
   "license": "ISC",
   "dependencies": {
     "ts-node": "^9.1.1",
